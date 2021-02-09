@@ -1,5 +1,5 @@
 # openpinner-client (A simple client to pin your files to undeletable internet)
-This is the client app written in angular for openpinner - http://openpinner.mycryptowebs.com:4000/ <br>
+This is the client app written in angular for openpinner - https://openpinner.mycryptowebs.com:4000/ <br>
 for more details visit:https://mycryptowebs.com/
 
 # Install angular
@@ -17,7 +17,7 @@ Visit `http://localhost4200`
 
 # Api Documentation
 Get Request <br>
-http://openpinner.mycryptowebs.com:4000/?page=1 (Page variable 10 results per page)<br>
+https://openpinner.mycryptowebs.com:4000/?page=1 (Page variable 10 results per page)<br>
 response json
 
 ```
@@ -40,7 +40,7 @@ response json
 ```
 
 Post request <br>
-http://openpinner.mycryptowebs.com:4000/search?page=1 (Page variable 10 results per page) <br>
+https://openpinner.mycryptowebs.com:4000/search?page=1 (Page variable 10 results per page) <br>
 
 Post man screen shot<br>
 ![alt text](https://i.imgur.com/81htjr8.png)
@@ -66,7 +66,7 @@ response json <br>
  ```
  
  Post request <br>
- http://openpinner.mycryptowebs.com:4000/save <br>
+ https://openpinner.mycryptowebs.com:4000/save <br>
  
  Post mon screen shot.
  ![alt text](https://i.imgur.com/K8pZ3vB.png)<br>
