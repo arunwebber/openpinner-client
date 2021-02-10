@@ -7,8 +7,13 @@ import { PinlistComponent } from './pinlist/pinlist.component';
 })
 export class ApiService {
   constructor(private httpClient: HttpClient) { }
-  public getPins(){
-    return this.httpClient.get(`https://openpinner.mycryptowebs.com:4000/`);
+  public getPins(pageNumber:number){
+    console.log('Page No2:',pageNumber);
+    let url = 'https://openpinner.mycryptowebs.com:4000/'
+    if(pageNumber)
+        url += '?page=' + pageNumber
+        console.log('Url:',url);
+    return this.httpClient.get(url);
   }
   public searchPins(InData:any){
     var searchTerm = {'term': InData };

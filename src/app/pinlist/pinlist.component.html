@@ -16,4 +16,7 @@
         <td><b>{{e["date"]}}</b></td>
       </tr>
     </tbody>
+    Page no:{{li.pageNumber}}
+    <button  (click)="back(li.pageNumber)"> Back</button>
+    <button  (click)="next(li.pageNumber)"> Next</button>
 </table>

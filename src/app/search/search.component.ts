@@ -3,10 +3,9 @@ import { ApiService } from '../api.service';
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
-  styleUrls: ['./search.component.css'] 
+  styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
-
   li:any;
   lis=[];
   InData:any;
