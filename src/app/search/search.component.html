@@ -16,7 +16,7 @@
       <tr *ngFor="let e of lis ;">
         <td><b>{{e["name"]}}</b></td>
         <td><b>{{e["about"]}}</b></td>
-        <td><b>{{e["hash"]}}</b></td>
+        <td><b><a target = "_blank" href='https://ipfs.io/ipfs/{{e["hash"]}}'>{{e["hash"]}}</a></b></td>
         <td><b>{{e["date"]}}</b></td>
       </tr>
 
