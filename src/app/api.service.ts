@@ -15,9 +15,22 @@ export class ApiService {
         console.log('Url:',url);
     return this.httpClient.get(url);
   }
-  public searchPins(InData:any){
-    var searchTerm = {'term': InData };
-    return this.httpClient.post(`https://openpinner.mycryptowebs.com:4000/search`,searchTerm);
+  public searchPins(pageNumber:number,InData:any){
+    let searchTerm = {'term': InData };
+    console.log('Search Pins Api',searchTerm);
+    console.log('Page No api:',pageNumber);
+    let url = 'https://openpinner.mycryptowebs.com:4000/search/'
+    if(pageNumber)
+        url += '?page=' + pageNumber
+        console.log('Url:',url);
+    if(typeof(InData)==='string'){
+      console.log('String:',searchTerm);
+      return this.httpClient.post(url,searchTerm);
+    }else{
+      console.log('Object:',searchTerm.term);
+      return this.httpClient.post(url,searchTerm.term);
+    }
+
   }
   public addPins(InData:any){
     console.log(InData);
