@@ -2,8 +2,8 @@
 This is the client app written in angular for openpinner - https://openpinner.mycryptowebs.com:4000/ <br>
 for more details visit:https://mycryptowebs.com/
 
-# Client On Server
-https://github.com/arunwebber/openpinner-client.git
+# url to the client
+https://openpinnerclient.mycryptowebs.com/
 
 # working example on glitch (Time to compile might be little higher based on glitch server)
 
