@@ -89,3 +89,28 @@ response json <br>
   }
 
 ```
+
+Post request <br>
+ https://openpinner.mycryptowebs.com:4000/check <br>
+ 
+ Post mon screen shot.
+ ![alt text](https://i.imgur.com/OMePgrx.png)<br>
+ 
+ response json if hash not present <br>
+ 
+ ```
+ {
+    "killed": false,
+    "code": 127,
+    "signal": null,
+    "cmd": "ipfs object stat QmNUYunnDahPKSWwp\neJqGS5F9437ashjWMP54PT22png --offline"
+  }
+```
+response json if hash  present <br>
+ 
+ ```
+ {
+    "hashdata": "NumLinks:       1\nBlockSize:      87\nLinksSize:      85\nDataSize:       2\nCumulativeSize: 192\n"
+ }
+```
+
