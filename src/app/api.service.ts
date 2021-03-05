@@ -36,4 +36,9 @@ export class ApiService {
     console.log(InData);
     return this.httpClient.post(`https://openpinner.mycryptowebs.com:4000/save`,InData);
   }
+  public checkHash(InData:any){
+    console.log('Data To Post',InData);
+    let data = {'hash': InData };
+    return this.httpClient.post(`https://openpinner.mycryptowebs.com:4000/check`,data);
+  }
 }

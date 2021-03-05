@@ -8,13 +8,15 @@ import {FormsModule} from '@angular/forms';
 import { PinlistComponent } from './pinlist/pinlist.component';
 import { SearchComponent } from './search/search.component';
 import { AddpinComponent } from './addpin/addpin.component';
+import { CheckHashComponent } from './check-hash/check-hash.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PinlistComponent,
     SearchComponent,
-    AddpinComponent
+    AddpinComponent,
+    CheckHashComponent
   ],
   imports: [
     BrowserModule,

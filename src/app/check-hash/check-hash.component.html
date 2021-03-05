@@ -1,0 +1,7 @@
+<form #hash = 'ngForm' (ngSubmit)="onSubmit(hash.value)">
+  <input type="text" name="term" ngModel>
+  <button type="submit">Check</button>
+</form>
+<div id="">
+  Result:<td><b>{{ lis | json}}</b></td>
+</div>
